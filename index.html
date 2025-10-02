@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Waleema Invitation</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    'serif': ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+                    'cursive': ['"Zapfino"', '"Snell Roundhand"', '"Brush Script MT"', '"Lucida Handwriting"', 'cursive']
+                }
+            }
+        }
+    }
+</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+body { overflow-x: hidden; }
+.name-container img {
+    max-width: 100%;
+    height: auto;
+}
+</style>
+</head>
+<body class="min-h-screen bg-white relative">
+<div class="relative z-10 max-w-4xl mx-auto px-4 py-8">
+
+    <div class="text-center mb-12">
+        <p class="text-xl md:text-2xl text-gray-800 font-medium font-serif italic leading-relaxed">
+            You are warmly invited to the blessed Waleema of
+        </p>
+    </div>
+
+    <!-- Name Image Section -->
+    <div class="text-center mb-16 flex justify-center flex-wrap items-center name-container">
+        <img src="Names.png" alt="Razim & Shehani" />
+    </div>
+
+    <!-- Countdown Timer -->
+    <div class="bg-gray-50 rounded-2xl p-5 mb-16 shadow-sm border border-gray-200 max-w-xl mx-auto">
+        <div class="flex justify-center items-center space-x-3 md:space-x-6" id="countdown">
+            <div class="text-center">
+                <div class="text-xl md:text-2xl font-bold text-gray-900 font-mono">00</div>
+                <div class="text-xs text-gray-600 font-medium mt-1">Days</div>
+            </div>
+            <div class="text-xl text-gray-400">|</div>
+            <div class="text-center">
+                <div class="text-xl md:text-2xl font-bold text-gray-900 font-mono">00</div>
+                <div class="text-xs text-gray-600 font-medium mt-1">Hours</div>
+            </div>
+            <div class="text-xl text-gray-400">|</div>
+            <div class="text-center">
+                <div class="text-xl md:text-2xl font-bold text-gray-900 font-mono">00</div>
+                <div class="text-xs text-gray-600 font-medium mt-1">Mins</div>
+            </div>
+            <div class="text-xl text-gray-400">|</div>
+            <div class="text-center">
+                <div class="text-xl md:text-2xl font-bold text-gray-900 font-mono">00</div>
+                <div class="text-xs text-gray-600 font-medium mt-1">Secs</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Event Info -->
+    <div class="bg-white/80 backdrop-blur-sm rounded-3xl p-8 mb-10 shadow-xl border border-gray-200">
+        <div class="grid md:grid-cols-3 gap-6 items-center">
+            <div class="text-center">
+                <div class="flex flex-col items-center mb-3">
+                    <div class="bg-gray-100 p-3 rounded-full mb-3">
+                        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900">Date</h3>
+                </div>
+                <p class="text-lg md:text-xl text-gray-800 font-medium font-serif">December 12, 2025</p>
+            </div>
+
+            <div class="text-center">
+                <div class="flex flex-col items-center mb-3">
+                    <div class="bg-gray-100 p-3 rounded-full mb-3">
+                        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900">Location</h3>
+                </div>
+                <p class="text-lg md:text-xl text-gray-800 font-medium font-serif">
+                    Raffles Nugegoda<br>Sri Lanka
+                </p>
+            </div>
+
+            <div class="text-center">
+                <div class="flex flex-col items-center mb-3">
+                    <div class="bg-gray-100 p-3 rounded-full mb-3">
+                        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900">Time</h3>
+                </div>
+                <p class="text-lg md:text-xl text-gray-800 font-medium font-serif">8:00 P.M.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Map -->
+    <div class="bg-white/80 backdrop-blur-sm rounded-3xl p-5 shadow-xl border border-gray-200 mb-10">
+        <h3 class="text-lg font-semibold text-gray-900 text-center mb-3 flex items-center justify-center font-serif">
+            Venue Location
+        </h3>
+        <div class="aspect-video rounded-xl overflow-hidden border border-gray-200">
+            <iframe 
+                src="https://www.google.com/maps?q=6.8778815,79.9004005&hl=en&z=17&output=embed"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" title="Raffles Nugegoda Location">
+            </iframe>
+        </div>
+    </div>
+
+    <!-- Image in place of RSVP text -->
+    <div class="bg-gray-50 rounded-3xl p-8 shadow-xl border border-gray-200 mb-10">
+        <div class="text-center mb-6">
+            <img src="holdinghands.png" alt="RSVP Image" class="mx-auto max-w-full h-auto" />
+        </div>
+        <!-- Google Form Embedded -->
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSevWK1V35H-NpU_az7nf9tDDrHRA4u2JSAbY5IZkH5N35U0kA/viewform?embedded=true" width="100%" height="633" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+
+    <!-- Quote -->
+    <div class="text-center mt-8">
+        <div class="bg-gray-50 rounded-xl p-4 max-w-lg mx-auto border border-gray-200">
+            <p class="text-gray-800 font-medium text-base font-serif italic">
+                "And among His signs is that He created for you mates from among yourselves, that you may dwell in tranquility with them, and He has put love and mercy between your hearts."
+            </p>
+            <p class="text-gray-600 mt-2 font-medium">— Quran 30:21</p>
+        </div>
+        <div class="w-16 h-0.5 bg-gradient-to-r from-gray-600 to-gray-800 mx-auto mt-4 rounded-full"></div>
+    </div>
+
+    <div class="text-center mt-6 mb-12">
+        <p class="text-gray-800 font-semibold text-base">Your presence will be our greatest blessing</p>
+    </div>
+
+</div>
+
+<script>
+// Countdown Timer
+const targetDate = new Date('2025-12-12T20:00:00').getTime();
+const countdownElement = document.getElementById('countdown');
+function updateCountdown() {
+    const now = new Date().getTime();
+    const difference = targetDate - now;
+    if (difference > 0) {
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+        const timeElements = countdownElement.querySelectorAll('.font-mono');
+        timeElements[0].textContent = days.toString().padStart(2, '0');
+        timeElements[1].textContent = hours.toString().padStart(2, '0');
+        timeElements[2].textContent = minutes.toString().padStart(2, '0');
+        timeElements[3].textContent = seconds.toString().padStart(2, '0');
+    }
+}
+updateCountdown();
+setInterval(updateCountdown, 1000);
+</script>
+</body>
+</html>
